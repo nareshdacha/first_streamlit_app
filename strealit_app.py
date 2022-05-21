@@ -1,6 +1,6 @@
 import streamlit
 import pandas
-streamlit.title('Naresh Prathyusha')
+streamlit.title('Naresh Testing')
 streamlit.header('Laptop')
 streamlit.text('Testing Messages')
 streamlit.header('Breakfast Menu')
@@ -11,5 +11,5 @@ streamlit.text('🥑🍞 Avacado Toast')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
-streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avacado'])
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avacado','Apple'])
 streamlit.dataframe(my_fruit_list)
